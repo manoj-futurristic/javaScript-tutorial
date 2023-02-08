@@ -1,5 +1,27 @@
 const print = (txt) => console.log(txt); // function for print 
 
+// ============= Methods =============
+
+// String length
+// String slice()
+// String substring()
+// String substr()
+// String replace()
+// String replaceAll()
+// String toUpperCase()
+// String toLowerCase()
+// String concat()
+// String trim()
+// String trimStart()
+// String trimEnd()
+// String padStart()
+// String padEnd()
+// String charAt()
+// String charCodeAt()
+// String split()
+
+
+
 
 console.log("============= String's =============");
 
@@ -42,7 +64,9 @@ print('==== replace ====');//
 let replaceStr = "I am learning JavaScript"
 print(replaceStr.replace('JavaScript',"Python"));
 print(replaceStr.replace(/javascript/i,"Python")); // case sensitive ignore
-let newRepStr = replaceStr + " JavaScript";
+
+let newRepStr = replaceStr.concat(" ","JavaScript"); // joins two or more strings
+
 print(newRepStr.replace(/JavaScript/g,"Python")); // if replace all places 
 
 print(newRepStr.replaceAll("JavaScript", "Python")); // replace globale using replaceAll() method
