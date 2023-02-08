@@ -92,9 +92,22 @@ print(Str.search('z')); // if not in string return -1
 print(Str.indexOf('b')); // it does't work with regular exprations
 
 
+// 9. String match
 
+// It returns an array containing the results of matching a string.
 
+const matchArr = Str.match("a");
+print(matchArr);
 
+const matchAllArr = Str.matchAll(/d/g);
+print(Array.from(matchAllArr));
 
+let text = "I love cats. Cats are very easy to love. Cats are very popular."
+const iterator = text.matchAll(/Cats/gi);
+print(Array.from(iterator));
 
+print(text.includes("cats")); 
+print(text.includes("Cats",11)); 
 
+print(text.startsWith("I")); //true
+print(text.endsWith("popular.")); //true
